@@ -4,8 +4,6 @@ In this project, users can train the network to detect the number and location o
 The environment and packages that need to be downloaded are visible in https://github.com/AlexeyAB/darknet
 # our data 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6302925.svg)](https://doi.org/10.5281/zenodo.6302925)
-# An-automatic-plant-leaf-stoma-detection-method-based-on-YOLOv4
-In this project, users can train the network to detect the number and location of the stomata with the help of your labeled stomatal data or obtain the required stomatal test results with the help of existing weight files
 # data preparation 
 After labeling with labelme software, use jsontotxt.py to convert the json file into a txt file
 
