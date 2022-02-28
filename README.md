@@ -1,4 +1,4 @@
-# An-automatic-plant-leaf-stoma-detection-method-based-on-YOLOv4
+# automatic-stoma-detection-method
 In this project, users can train the network to detect the number and location of the stomata with the help of your labeled stomatal data or obtain the required stomatal test results with the help of existing weight files
 # Requirements for Linux
 The environment and packages that need to be downloaded are visible in https://github.com/AlexeyAB/darknet
