@@ -1,11 +1,11 @@
 # An-automatic-plant-leaf-stoma-detection-method-based-on-YOLOv4
-In this project, users can train the network with the help of labeled stomatal data or obtain the required stomatal test results with the help of existing weight files
+In this project, users can train the network to detect the number and location of the stomata with the help of your labeled stomatal data or obtain the required stomatal test results with the help of existing weight files
 # Requirements for Linux
 The environment and packages that need to be downloaded are visible in https://github.com/AlexeyAB/darknet
 # data preparation 
 After labeling with labelme software, use jsontotxt.py to convert the json file into a txt file
 
-You can use the train.py and test.py to devide data to train set and test set,and the address will in the train.txt and test.txt
+You can use the train.py and test.py to devide data to train set and test set and the address will in the train.txt and test.txt
 # test the best weights trained in this study with your image
 ./darknet detector test data/obj.data cfg/yolov4-obj.cfg yolov4-obj_best.weights(detect one image)
 
