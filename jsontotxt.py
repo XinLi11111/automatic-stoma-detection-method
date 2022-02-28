@@ -5,18 +5,15 @@ import os
 import json
 import glob
 wd = getcwd()
-"labelme json conver to txt"
-classes = ["stoma"]  #category name
-image_ids = glob.glob(r"/home/b/darknet /obj/2/*.jpg")           #jpg and json both in obj
+classes = ["stoma"]  #Detection target name 
+image_ids = glob.glob(r"[your image path]/*.jpg")           #jpg and json need to both in obj folder
 print(image_ids)
-
-
 def convert_annotation(image_id):
     jsonfile=open('%s.json' % (image_id))
     in_file = json.load(jsonfile)
     #print(in_file)
-    height=in_file["imageHeight"]
     width=in_file["imageWidth"]
+    height=in_file["imageHeight"]
     size=[width,height]
     list_file = open('%s.txt'%(image_id.split('.')[0]), 'w')
     for i in range(0,len(in_file["shapes"])):
@@ -43,7 +40,7 @@ def convert_annotation(image_id):
         y = y*dh
         h = h*dh
         if cls not in classes:
-            print("cls not in classes")
+            print("class not in classes")
             continue
         cls_id = classes.index(cls)
         b = (x, y, w, h)
